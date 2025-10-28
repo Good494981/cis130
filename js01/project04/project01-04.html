@@ -7,8 +7,7 @@
       Hands-on Project 1-4
 
       Author: Keysha T. Bouyer
-      Date:  September 22,2025
-
+      Date:   September 25, 2025
       Filename: index.htm
    -->
    <meta charset="utf-8" />
@@ -16,31 +15,38 @@
    <title>Hands-on Project 1-4</title>
    <link rel="stylesheet" href="styles.css" />
 </head>
-
+<script>
+</script>
 <body>
    <header>
       <h1>
          Hands-on Project 1-4
       </h1>
    </header>
-
    <article>
       <h2>Shipping Address</h2>
       <form>
-      
-         <fieldset id="addroptions">
-            <legend><span>Choose an address</span></legend>
-            <label for="homeoption" id="homeaddr">
-               <div>Home</div>
-               <input type="radio" id="homeoption" name="shippingaddr" />
+        <fieldset id="addressoptions">
+            <legend><span>Choose an address
+                   </span>
+                  </legend>
+            <label for="homeoption"></label> id="homeaddress">
+               <div>Home
+               <div id="homeAddress">          
+                        </div>                              
+                         <script>
+            <input type="radio" name="home" value="1 Main St, Sicilia, MA 02103" onclick="showAddress()"> Home Address<br> 
+            <br/>
+           <input type="radio" name="work" value="15 Oak Ln, Central City, MA 02104" onclick="showAddress()"> Work Address<br>
+           </script><br/>
+             </script>
+            <input type="radio" id="homeoption"> name="shippingaddress" />
             </label>
-            <label for="workoption" id="workaddr">
+            <label for="workoption" id="workaddress">
                <div>Work</div>
-               <input type="radio" id="workoption" name="shippingaddr" />
+               <input type="radio" id="workoption"> name="shippingaddr" />
             </label>
-         </fieldset>
-         
-         
+         </fieldset>                
           <fieldset id="contactinfo">
             <label for="street">
               Street Address
@@ -50,17 +56,16 @@
               City
               <input type="text" id="city" />
             </label>
-            <label for="state">
+            <label for="state" />
               State
               <input type="text" id="state" />
             </label>
-            <label for="code">
+            <label for="code" />
               Zip
               <input type="text" id="code" />
             </label>
           </fieldset>
-          
-     </form>
+               </form>
    </article>
 </body>
 </html>

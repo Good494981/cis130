@@ -7,7 +7,7 @@
       Hands-on Project 1-2
 
       Author: Keysha T. Bouyer
-      Date:   September 22, 2025
+      Date:   October 13, 2025
 
       Filename: project01-02.html
    -->
@@ -28,47 +28,56 @@
       <h2>High-Speed Internet Plans</h2>
 
       <table>
-         <thead>
+         
             <tr>
                <th>Service</th>
-               <th>Download Speed (Mbps)</th>
-            </tr>
+               <th>Download Speed</th>          
+               </th>
+               </tr>
          </thead>
          <tbody>
             <tr>
-               <td>
-
-               </td>
-               <td>
-
-               </td>
+               <td><script>document.write(service1Name);</script></td>
+               <td><script>document.write(service1Speed);</script></td>
+               </tr>
+               <tr>
+               <td><script>document.write(service2Name);</script></td>
+               <td><script>document.write(service2Speed);</script></td>
+            </tr>
+            <tr>
+               <td><script>document.write(service3Name);</script></td>
+               <td><script>document.write(service3Speed);</script></td>
+               </tr>
+               <tr>
+               <td><script>document.write(service4Name);</script></td>
+               <td><script>document.write(service4Speed);</script></td>
             </tr>
             <tr>
                <td>
 
                </td>
                <td>
-
                </td>
-            </tr>
             <tr>
                <td>
-
                </td>
                <td>
-
-               </td>
-            </tr>
-            <tr>
-               <td>
-
-               </td>
-               <td>
-
                </td>
             </tr>
          </tbody>
       </table>
-   </article>
+      <script>
+         //Service Plan Names
+         let service1Name = "Basic";
+         let service2Name = "Express";
+         let service3Name = "Extreme";
+         let service4Name = "Ultimate";
+      // Service Speeds
+         letservice1Speed  = "50Mbps";
+         letservice2Speed = "100 Mbps";
+         letservice3Speed = "500 Mbps";// <-- add if needed
+        letservice4Speed = "1 Gig"; // <-- add if needed            </script>
+  </script>
+</article>
 </body>
 </html>

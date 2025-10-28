@@ -7,60 +7,56 @@
       Hands-on Project 1-4
 
       Author: Keysha T. Bouyer
-      Date:  September 22,2025
+      Date:   September 25, 2025
 
-      Filename: index.htm
+      Filename: project01-04_txt.html
    -->
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Hands-on Project 1-4</title>
    <link rel="stylesheet" href="styles.css" />
+   <script src="project01-04_txt.js"></script>
 </head>
-
 <body>
    <header>
       <h1>
          Hands-on Project 1-4
       </h1>
    </header>
-
    <article>
       <h2>Shipping Address</h2>
       <form>
-      
-         <fieldset id="addroptions">
-            <legend><span>Choose an address</span></legend>
-            <label for="homeoption" id="homeaddr">
-               <div>Home</div>
-               <input type="radio" id="homeoption" name="shippingaddr" />
+         <fieldset id="addressoptions">
+            <legend>Choose an address</legend>
+            <label id="homeaddress" for="homeoption">
+               <input type="radio" id="homeoption" name="shippingaddress" /> Home
             </label>
-            <label for="workoption" id="workaddr">
-               <div>Work</div>
-               <input type="radio" id="workoption" name="shippingaddr" />
+            <label id="workaddress" for="workoption">
+               <input type="radio" id="workoption" name="shippingaddress" /> Work
             </label>
          </fieldset>
-         
-         
-          <fieldset id="contactinfo">
-            <label for="street">
-              Street Address
-              <input type="text" id="street" />
+
+         <fieldset id="contactinfo">
+            <label for="street">Street Address
+               <input type="text" id="street" />
             </label>
-            <label for="city">
-              City
-              <input type="text" id="city" />
+            <label for="city">City
+               <input type="text" id="city" />
             </label>
-            <label for="state">
-              State
-              <input type="text" id="state" />
+            <label for="state">State
+               <input type="text" id="state" />
             </label>
-            <label for="code">
-              Zip
-              <input type="text" id="code" />
+            <label for="code">Zip
+               <input type="text" id="code" />
             </label>
-          </fieldset>
-          
-     </form>
+         </fieldset>
+      </form>
+
+      <div id="addressOutput">
+         <script>
+            document.write("Home Address: " + homeStreet + "<br>" + homeCity + ", " + homeState + " " + homeCode);
+         </script>
+      </div>
    </article>
 </body>
 </html>
